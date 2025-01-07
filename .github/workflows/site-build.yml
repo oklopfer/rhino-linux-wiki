@@ -52,4 +52,4 @@ jobs:
 
       - name: Upload to server
         run: |
-          scp -i ~/.ssh/id_ed25519 -rp out/ -P "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}:${{ secrets.SSH_DIR }}"
+          scp -i ~/.ssh/id_ed25519 -rp out/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}:${{ secrets.SSH_DIR }}"
